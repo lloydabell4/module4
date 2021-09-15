@@ -1,0 +1,15 @@
+---
+title: "Species"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+#Set up Code
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
