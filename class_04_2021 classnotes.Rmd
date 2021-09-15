@@ -1,6 +1,8 @@
 ---
 title: "class_04"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -73,7 +75,7 @@ ggplot(data = ages) +
 
 ```{r create bar graph}
 #default stat transformation fro geom_bar() is stat_count()
-ggplot(data = full_data_new)+
+ggplot(data = fulldata_main)+
   geom_bar(mapping = aes(x = speaker))+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 
@@ -217,7 +219,7 @@ ggplot(data = organdata, mapping = aes(x = reorder(country, donors, na.rm=TRUE),
 
 ```{r plotting means and SD}
 #verbose way (not comprehensive - just example of first 3)
-by_country_verbose <-  organdata %>% groupby(consent_law, country)%>%
+by_country_verbose <-  organdata %>% group_by(consent_law, country)%>%
   summarise(donors_mean = mean(donors, na.rm = TRUE),
             donors_sd = sd(donors, na.rm = TRUE),
             gdp_mean = mean(gdp, na.rm = TRUE))
