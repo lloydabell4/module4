@@ -1,0 +1,42 @@
+---
+title: "class_04_2021 - learning activity"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load data and explore
+
+Explore the opiates dataset (found in socviz). What are the variables? Observations? Start thinking about what you might want to explore. 
+
+Considering sharing one of your groups projects with your group so you can work off a single RMD file. 
+
+```{r Setup }
+
+```
+
+## Exploratory Question
+
+Develop an exploratory question that requires creating new aggregated variable(s) and write it out below. 
+
+
+## Develop code to create your new variables
+
+Write our the code required to create your new aggregated variables
+```{r Aggregation_Summarize}
+
+```
+
+##Create visualizations that address your exploratory question
+Create as many visualization as you need to properly address your question. 
+
+```{r Visualization 1}
+
+```
+
+```{r Visualization 2}
+
+```
+
