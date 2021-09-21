@@ -14,7 +14,8 @@ Explore the opiates dataset (found in socviz). What are the variables? Observati
 Considering sharing one of your groups projects with your group so you can work off a single RMD file. 
 
 ```{r Setup }
-
+library(socviz)
+str(opiates)
 ```
 
 ## Exploratory Question
